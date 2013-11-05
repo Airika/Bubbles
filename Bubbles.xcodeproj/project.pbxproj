@@ -21,6 +21,8 @@
 		0388579218233D0400DD4041 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388577418233D0400DD4041 /* UIKit.framework */; };
 		0388579A18233D0400DD4041 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0388579818233D0400DD4041 /* InfoPlist.strings */; };
 		0388579C18233D0400DD4041 /* BubblesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0388579B18233D0400DD4041 /* BubblesTests.m */; };
+		03EC266118270464006FA94E /* UIView+Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EC266018270464006FA94E /* UIView+Bubble.m */; };
+		03EC2664182891EE006FA94E /* UIBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EC2663182891EE006FA94E /* UIBubbleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		0388579718233D0400DD4041 /* BubblesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubblesTests-Info.plist"; sourceTree = "<group>"; };
 		0388579918233D0400DD4041 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0388579B18233D0400DD4041 /* BubblesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblesTests.m; sourceTree = "<group>"; };
+		03EC265F18270464006FA94E /* UIView+Bubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Bubble.h"; path = "../UIView+Bubble.h"; sourceTree = "<group>"; };
+		03EC266018270464006FA94E /* UIView+Bubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Bubble.m"; path = "../UIView+Bubble.m"; sourceTree = "<group>"; };
+		03EC2662182891EE006FA94E /* UIBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBubbleView.h; sourceTree = "<group>"; };
+		03EC2663182891EE006FA94E /* UIBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBubbleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		0388577618233D0400DD4041 /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
+				03EC2662182891EE006FA94E /* UIBubbleView.h */,
+				03EC2663182891EE006FA94E /* UIBubbleView.m */,
+				03EC265F18270464006FA94E /* UIView+Bubble.h */,
+				03EC266018270464006FA94E /* UIView+Bubble.m */,
 				0388577F18233D0400DD4041 /* AppDelegate.h */,
 				0388578018233D0400DD4041 /* AppDelegate.m */,
 				0388578218233D0400DD4041 /* Main.storyboard */,
@@ -249,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EC2664182891EE006FA94E /* UIBubbleView.m in Sources */,
 				0388578718233D0400DD4041 /* ViewController.m in Sources */,
 				0388578118233D0400DD4041 /* AppDelegate.m in Sources */,
+				03EC266118270464006FA94E /* UIView+Bubble.m in Sources */,
 				0388577D18233D0400DD4041 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +472,7 @@
 				038857A118233D0400DD4041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		038857A218233D0400DD4041 /* Build configuration list for PBXNativeTarget "BubblesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				038857A418233D0400DD4041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

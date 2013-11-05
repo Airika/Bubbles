@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutletCollection(UIView) NSArray *bubbleViews;
+
 @end
